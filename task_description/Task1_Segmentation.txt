@@ -1,0 +1,26 @@
+Assignment - Final - Task 1 - Segmentation
+=================================
+
+Please refer to ReadMe.txt for general rules for this final assignment.
+
+In this task, you shall train a U-Net to segment images according to the 4 types of sportballs they can contain.
+
+You shall use the provided code to generate your train and test data.
+Keep the images small - 32 pixels - with a single object of one of the four categories with max size 24 pixels.
+You can generate as many examples for the training set as you wish (10000 may be a good number).
+You shall generate 1000 examples for the test set.
+You will need to tweak the code in `data/sportballs.py` to create the segmentation labels automatically.
+Each type of sportsball shall have a different segmentation label.
+
+You shall implement and train U-Net like model adapting the architecture to the small images of 32x32 pixels.
+
+You shall follow the instructions for the content of the report as explained in ReadMe.txt. 
+In addition, you shall use the final trained versions to:
+* Report the average Intersection Over Union (IOU) metric over the test set data
+* Print 10 examples of original test images, their corresponding segmentation maps and the predicted segmentation maps.
+
+References: 
+* Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation. In Medical image computing and computer-assisted intervention–MICCAI 2015: 18th international conference, Munich, Germany, October 5-9, 2015, proceedings, part III 18 (pp. 234-241). Springer International Publishing.
+* Tutorials, blogs etc. online
+
+
